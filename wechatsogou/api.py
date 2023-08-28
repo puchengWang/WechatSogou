@@ -73,7 +73,7 @@ class WechatSogouAPI(object):
         if unlock_callback is None:
             unlock_callback = unlock_sogou_callback_example
         millis = int(round(time.time() * 1000))
-        r_captcha = session.get('http://weixin.sogou.com/antispider/util/seccode.php?tc={}'.format(millis), headers={
+        r_captcha = session.get('https://weixin.sogou.com/antispider/util/seccode.php?tc={}'.format(millis), headers={
             'Referer': url,
         })
         if not r_captcha.ok:

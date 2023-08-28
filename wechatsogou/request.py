@@ -83,7 +83,7 @@ class WechatSogouRequest(object):
         # qs['wxid'] = wxid
         # qs['usip'] = usip
 
-        return 'http://weixin.sogou.com/weixin?{}'.format(urlencode(qs_dict))
+        return 'https://weixin.sogou.com/weixin?{}'.format(urlencode(qs_dict))
 
     @staticmethod
     def gen_search_gzh_url(keyword, page=1):
